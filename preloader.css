@@ -27,7 +27,7 @@ time, mark, audio, video {
     left:0;
     z-index:1000;    
 }
-#loader-wrapper .loader-section {
+.loader-section {
     position: fixed;
     top: 0;
     width: 100%;
@@ -35,14 +35,14 @@ time, mark, audio, video {
     background: #222222;
     z-index: 1000;
 }    
-#loader-wrapper .loader-section.section-top {
+.section-top {
     top: 0;
 }
  
-#loader-wrapper .loader-section.section-bottom {
+.section-bottom {
    top:50%
 }
-.loaded #loader-wrapper .loader-section.section-top {
+.loaded .section-top {
     -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(-100%);  /* IE 9 */
     transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
@@ -50,7 +50,7 @@ time, mark, audio, video {
             transition: all 1s 1s ease-out;
 }
  
-.loaded #loader-wrapper .loader-section.section-bottom {
+.loaded .section-bottom {
     -webkit-transform: translateY(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
     -ms-transform: translateY(100%);  /* IE 9 */
     transform: translateY(100%);  /* Firefox 16+, IE 10+, Opera */
@@ -71,3 +71,8 @@ time, mark, audio, video {
     from {transform: translateX(0)}
     to {transform: translateX(100%)}
 }
+
+
+
+
+
